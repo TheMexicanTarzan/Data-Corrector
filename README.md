@@ -1,6 +1,6 @@
 # Data-Corrector
 
-This project is aimed to propose an approach for differentiating financial data provider errors from legitimate market events. The ticker universe used in the analysis can be found in "Data-Corrector/Analysis/Universe.txt" and the full analysis report can be found in "Data-Corrector/Analysis/Report.pdf"
+This project is aimed to propose an approach for differentiating financial data provider errors from legitimate market events. The ticker universe used in the analysis consists of 6081 tickers across diverse sectors. The full analysis report can be found in "Data-Corrector/Analysis/Report.pdf"
 
 To run the data cleaning pipeline:
 - Create a new environment
@@ -15,4 +15,5 @@ To replicate the forensic analysis:
 - Go to R_Data-Corrector\Analysis\prompts, copy the prompt which corresponds to the selected error log and paste it as an instruction
 
 **Note:** As mentioned in the report, the soft filters from validate_financial_equivalencies are numerous and contain a very high number of false positives. Therefore, It is advised to remove the logs from this category so the LLM does not get distracted from genuine logs during analysis.
+
 
